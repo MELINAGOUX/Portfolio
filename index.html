@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" >
+  <link href="https://fonts.cdnfonts.com/css/lycanthrope" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/55d6b06e1d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet" >
+  <link href="https://fonts.cdnfonts.com/css/morehla" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/raight-house" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/641b5da981.js" crossorigin="anonymous"></script>
+  <title>Portfolio</title>
+  </head>
+<body>
+  <nav class="navbar">
+    <h2>Melina Goux</h2>
+    <input class="chekbox" type="checkbox">
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-x"></i>
+    <ul class="menu">
+      <li><a href="#">Hola</a></li>
+      <li><a href="#">Conocimientos</a></li>
+      <li><a href="#">Proyectos</a></li>
+      <li><a href="#">Aptitudes</a></li>
+      <li><a href="#">Intereses</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+  <header class="container">
+    <h1>Portfolio</h1>
+    <div class="container-video">
+      <video muted autoplay loop>
+        <source src="./video/videoportada.mp4" type="video/mp4">
+      </video>
+    </div>
+  </header>
+  <!-- primera parte -->
+    <section class="presentacion">
+    <div class="portada">
+      <img src="./img/img-portada.jpg" alt="foto portada">
+    </div>
+    <p>
+      Hola mi nombre es Melina Goux, soy Profesora en nivel inicial, tengo 39
+      años y vivo en Argentina. Incursione en el mundo de la programacion por
+      curiosidad, ya que me encanta emprender nuevos desafios y hoy en día
+      cumpli con mi objetivo de convertirme en Frontend Developer.
+    </p>
+    </section>
+  <!-- segunda parte -->
+  <section class="conocimientos">
+    <h2>Conocimientos</h2>
+      <div class="iconos">
+      <img src="./img/icono-html.png" alt="imagen icono html">
+      <img src="./img/icono-css.png" alt="imagen icono css">
+      <img src="./img/icono-javascript.png" alt="icono javascript">
+      <img src="./img/icono-git.png" alt="icono git">
+      <img src="./img/icono-github.png" alt="icono github">
+    </div>
+  </section>
+  <!-- tercera parte -->
+  <section class="container-proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="proyectos">
+      <img src="./img/imagen-pasteleria.jpg" alt="proyecto pasteleria">
+      <img src="./img/thundercats.png" alt="proyecto thundercats">
+    </div>
+  </section>
+  <!-- < cuarta parte -->
+  <section class="container-aptitudes">
+    <h2>Aptitudes</h2>
+    <div class="aptitudes">
+    <ul>
+      <li>Gran predisposicion para aprender y trabajar en equipo</li>
+      <li>Creativa</li>
+      <li>Flexible, capaz de adaptarme con facilidad a nuevo desafios</li>
+      <li>Proactiva</li>
+      <li>Organizada</li>
+      <li>Puntual</li>
+    </ul>
+    </div>
+  </section>
+  <!-- quinta parte -->
+  <section class="container__intereses">
+    <h2>Intereses Personales</h2>
+    <div class="iconos__intereses">
+      <img src="./img/coche.png" alt="icono coche">
+      <img src="./img/musical.png" alt="icono nota musical">
+      <img src="./img/perro.png" alt="icono huella mascota">
+      <img src="./img/cine.png" alt="icono cine">
+    </div>
+  </section>
+  <!-- sexta parte -->
+  <section class="formulario__container">
+    <h2 class="text-center">¿ Queres comunicarte?</h2>
+    <form class="formulario">
+      <fieldset>
+        <legend>Tus Datos</legend>
+        <div class="campo">
+          <label for="nombre">Nombre: </label>
+          <input id="nombre" type="text" placeholder="Tu Nombre" required>
+        </div>
+        <div class="campo">
+          <label for="asunto">Asunto:</label>
+          <input id="asunto" type="text" placeholder="Tu Asunto" required>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail:</label>
+          <input id="email" type="email" placeholder="Tu Email">
+        </div>
+        <div class="campo">
+          <label for="tel">Teléfono:</label>
+          <input id="tel" type="tel" placeholder="Tu Teléfono">
+        </div>
+        <div class="campo">
+          <label for="tel">Mensaje:</label>
+          <textarea rows="10" cols="20"></textarea>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+  <!-- septima parte -->
+    <h2>Gracias por su visita</h2>
+    <footer class="redes" id="redes">
+      <i class="fa-brands fa-square-facebook fa-xl" style="color: #1f59bd"></i>
+      <i class="fa fa-instagram" style="font-size: 24px; color: red"></i>
+      <i class="fa-brands fa-whatsapp fa-xl" style="color: #17c42b"></i>
+    </footer>
+  </body>
+</html>

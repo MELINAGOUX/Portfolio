@@ -17,16 +17,16 @@
   h2,
   .formulario,
   .footer,
-  .portada,
-  .conocimientos,
-  .iconos,
-  .container-proyectos,
-  .proyectos,
-  .container-aptitudes,
-  .aptitudes,
-  .container__intereses,
-  .formulario__container,
-  .formulario legend,
+  .presentation__frontPage,
+  .know,
+  .know__icons,
+  .projects,
+  .projects__container,
+  .ability,
+  .ability__container,
+  .interests,
+  .contact,
+  .contact__form legend,
   .btn:hover {
     background-image: linear-gradient(52deg,
         rgba(163, 163, 163, 0.09) 0%,
@@ -126,7 +126,7 @@
     display: block;
   }
 
-  .menu {
+  .navbar__menu {
     width: 200px;
     position: absolute;
     top: -212px;
@@ -135,11 +135,11 @@
     transition: 300ms;
   }
 
-  .menu li {
+  .navbar__menu li {
     list-style: none;
   }
 
-  .menu li a {
+  .navbar__menu li a {
     text-decoration: none;
     color: black;
     background-color: #3232f0;
@@ -147,11 +147,11 @@
     padding: 8px 8px;
   }
 
-  .menu li a:hover {
+  .navbar__menu li a:hover {
     background-color: #378c94;
   }
 
-  .chekbox:checked~.menu {
+  .chekbox:checked~.navbar__menu {
     top: 40px;
   }
 
@@ -193,14 +193,14 @@
     color: aliceblue;
   }
 
-  .container-video {
+  .container__video {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -2;
   }
 
-  .container-video video {
+  .container__video video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -208,7 +208,7 @@
     background-size: cover;
   }
 
-  .portada {
+  .presentation__frontPage {
     width: 100%;
     height: 90%;
     display: flex;
@@ -216,11 +216,11 @@
     flex-direction: column;
   }
 
-  .portada__image {
+  .presentation__frontPage-image {
     display: flex;
   }
 
-  .portada__image img {
+  .presentation__frontPage-image img {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -237,7 +237,7 @@
     color: black;
   }
 
-  .conocimientos {
+  .know {
     width: 100%;
     height: 100%;
     display: flex;
@@ -246,7 +246,7 @@
     align-items: center;
   }
 
-  .iconos {
+  .know__icons {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -255,12 +255,12 @@
     align-items: center;
   }
 
-  .iconos img {
+  .know__icons img {
     width: 40%;
     height: 40%;
   }
 
-  .container-proyectos {
+  .projects {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -268,7 +268,7 @@
     margin-top: 30px;
   }
 
-  .proyectos {
+  .projects__container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -276,13 +276,13 @@
     align-items: center;
   }
 
-  .proyectos img {
+  .projects__container img {
     width: 95%;
     height: 95%;
     padding: 10px;
   }
 
-  .container-aptitudes {
+  .ability {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -290,7 +290,7 @@
     margin-top: 30px;
   }
 
-  .aptitudes {
+  .ability__container {
     font-family: "RotondaC", sans-serif;
     font-size: 20px;
     display: flex;
@@ -300,7 +300,7 @@
     margin-top: 30px;
   }
 
-  .aptitudes ul li {
+  .ability__container ul li {
     padding-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -310,7 +310,7 @@
     margin: 3px;
   }
 
-  .container__intereses {
+  .interests {
     width: 95%;
     display: flex;
     justify-content: center;
@@ -331,7 +331,7 @@
     color: black;
   }
 
-  .iconos__intereses {
+  .interests__container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -341,36 +341,35 @@
     margin-top: 20px;
   }
 
-  .iconos__intereses-items {
+  .interests__container-icons {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .iconos__intereses-items img {
+  .interests__container-icons img {
     width: 100%;
   }
 
-  .text-center {
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__title {
     text-align: center;
     font-size: 2rem;
     color: black;
     margin-top: 20px;
   }
 
-  .formulario__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .formulario {
+  .contact__form {
     width: 90%;
   }
 
-  .formulario fieldset {
+  .contact__form fieldset {
     border: 2px solid blue;
     margin: bottom 1rem;
     padding: 25px;
@@ -378,7 +377,7 @@
     font-family: "RotondaC", sans-serif;
   }
 
-  .formulario legend {
+  .contact__form legend {
     width: 90%;
     text-align: center;
     color: black;
@@ -388,14 +387,14 @@
     margin-bottom: 1rem;
   }
 
-  .campo {
+  .field {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
     gap: 10px;
   }
 
-  .campo label {
+  .field label {
     flex-basis: 1rem;
   }
 
@@ -406,9 +405,9 @@
     font-family: "RotondaC", sans-serif;
   }
 
-  .campo input:not([type="radio"]),
-  .campo textarea,
-  .campo select {
+  .field input:not([type="radio"]),
+  .field textarea,
+  .field select {
     flex: 1;
     border: 2px solid blue;
     padding: 5px;
@@ -432,7 +431,7 @@
     border-radius: 20px;
   }
 
-  .redes {
+  .networks {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -460,7 +459,7 @@
   }
 
 
-.menu {
+.navbar__menu {
   display: flex;
   width: unset;
   height: 100%;
@@ -469,18 +468,18 @@
   z-index: 0;
   justify-content: space-between;
 }
-.menu li a{
+.navbar__menu li a{
   background-color: transparent;
 }
-.portada {
+.presentation__frontPage {
   flex-direction: row;
 }
 
-.portada__image {
+.presentation__frontPage-image {
   width: 350%;
 }
 
-.portada img {
+.presentation__frontPage img {
   height: 100%;
   padding: 2%;
 }
@@ -490,24 +489,24 @@ p {
   margin-top: 90px;
 }
 
-.iconos img {
+.know__icons img {
   width: 30%;
 }
 
-.proyectos {
+.projects__container {
   flex-direction: row;
 }
 
-.proyectos img {
+.projects__container img {
   width: 50%;
   padding: 17px;
 }
 
-.aptitudes {
+.ability__container {
   font-size: 30px;
 }
 
-.aptitudes ul li {
+.ability__container ul li {
   padding-bottom: 20px;
 }
 
@@ -517,15 +516,15 @@ h3 {
   margin: 10px;
 }
 
-.iconos__intereses {
+.interests__container {
   width: 100%;
 }
 
-.formulario {
+.contact__form {
   width: 75%;
 }
 
-.container__redes {
+.networks__container {
   width: 100%;
   display: flex;
   gap: 10%;
@@ -542,27 +541,27 @@ h3 {
     font-size: 8rem;
   }
 
-  .portada__image {
+  .presentation__frontPage-image {
     width: 200%;
   }
 
-  .portada p {
+  .presentation__frontPage p {
     font-size: 2rem;
     align-items: center;
     margin-top: 20px;
   }
 
 
-  .iconos img {
+  .know__icons img {
     width: 20%;
   }
 
-  .iconos__intereses {
+  .interests__container {
     display: flex;
     flex-direction: row;
   }
 
-  .formulario {
+  .contact__form {
     width: 65%;
   }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,48 +17,49 @@
   <link rel="stylesheet" href="style.css" />
   <title>Portfolio</title>
 </head>
+
 <body>
   <nav class="navbar">
     <h2>Melina Goux</h2>
     <input class="chekbox" type="checkbox" />
     <i class="fa-solid fa-bars"></i>
     <i class="fa-solid fa-x"></i>
-    <ul class="menu">
+    <ul class="navbar__menu">
       <li>
-        <a href="#hola" class="item">Hola</a>
+        <a href="#greeting" class="navbar__menu-item">Hola</a>
       </li>
       <li>
-        <a href="#conocimientos" class="item">Conocimientos</a>
+        <a href="#know" class="navbar__menu-item">Conocimientos</a>
       </li>
       <li>
-        <a href="#proyectos">Proyectos</a>
+        <a href="#projects" class="navbar__menu-item">Proyectos</a>
       </li>
       <li>
-        <a href="#aptitudes" class="item">Aptitudes</a>
+        <a href="#ability" class="navbar__menu-item">Aptitudes</a>
       </li>
       <li>
-        <a href="#intereses" class="item">Intereses</a>
+        <a href="#interests" class="navbar__menu-item">Intereses</a>
       </li>
       <li>
-        <a href="#contacto" class="item">Contacto</a>
+        <a href="#contact" class="navbar__menu-item">Contacto</a>
       </li>
     </ul>
   </nav>
   <!-- aqui aparece un video de presentacion -->
   <header class="container">
     <h1>Portfolio</h1>
-    <div class="container-video">
+    <div class="container__video">
       <video muted autoplay loop>
         <source src="./video/videoportada.mp4" type="video/mp4" />
       </video>
     </div>
   </header>
   <!-- primera parte  imagen personal y descripcion-->
-  <section class="presentacion">
-    <a id="hola"></a>
+  <section class="presentation">
+    <a id="greeting"></a>
     <h2>Bienvenidos</h2>
-    <div class="portada">
-      <div class="portada__image">
+    <div class="presentation__frontPage">
+      <div class="presentation__frontPage-image">
         <img src="./img/img-portada.jpg" alt="foto portada" />
       </div>
       <p>
@@ -69,31 +71,31 @@
     </div>
   </section>
   <!-- segunda parte -->
-  <a id="conocimientos"></a>
-  <section class="conocimientos">
+  <a id="know"></a>
+  <section class="know">
     <h2>Conocimientos</h2>
-    <div class="iconos">
-      <img src="./img/icono-html480.png" alt="imagen icono html"> 
-      <img src="./img/icono-css480.png" alt="imagen icono css" >
-      <img src="./img/icono-js480.png" alt="imagen icono javascript">
-      <img src="./img/icono-git480.png" alt="imagen icono git">
-      <img src="./img/icono-github480.png" alt="imagen icono github">
+    <div class="know__icons">
+      <img src="./img/icono-html480.png" alt="imagen icono html" />
+      <img src="./img/icono-css480.png" alt="imagen icono css" />
+      <img src="./img/icono-js480.png" alt="imagen icono javascript" />
+      <img src="./img/icono-git480.png" alt="imagen icono git" />
+      <img src="./img/icono-github480.png" alt="imagen icono github" />
     </div>
   </section>
   <!-- tercera parte -->
-  <a id="proyectos"></a>
-  <section class="container-proyectos">
+  <a id="projects"></a>
+  <section class="projects">
     <h2>Proyectos</h2>
-    <div class="proyectos">
+    <div class="projects__container">
       <img src="./img/pasteleria.jpg" alt="proyecto pasteleria" />
       <img src="./img/thundercats.jpg" alt="proyecto thundercats" />
     </div>
   </section>
   <!-- < cuarta parte descripcion de aptitudes personales-->
-  <a id="aptitudes"></a>
-  <section class="container-aptitudes">
+  <a id="ability"></a>
+  <section class="ability">
     <h2>Aptitudes</h2>
-    <div class="aptitudes">
+    <div class="ability__container">
       <ul>
         <li>Gran predisposicion para aprender y trabajar en equipo</li>
         <li>Creativa</li>
@@ -105,52 +107,52 @@
     </div>
   </section>
   <!-- quinta parte -->
-  <a id="intereses"></a>
-  <section class="container__intereses">
+  <a id="interests"></a>
+  <section class="interests">
     <h2>Intereses Personales</h2>
-    <div class="iconos__intereses">
-     <div class="iconos__intereses-items">
+    <div class="interests__container">
+      <div class="interests__container-icons">
         <h3>viajar</h3>
         <img src="./img/mujer-viajando.jpg" alt="imagen mujer viajando" />
       </div>
-      <div class="iconos__intereses-items">
+      <div class="interests__container-icons">
         <h3>Música</h3>
         <img src="./img/mujer-musica.jpg" alt="imagen mujer escuchando música" />
       </div>
-      <div class="iconos__intereses-items">
+      <div class="interests__container-icons">
         <h3>Mascotas</h3>
         <img src="./img/mujer-perro.jpg" alt="icono mujer y mascota" />
       </div>
     </div>
-    </section>
+  </section>
   <!-- sexta parte  aqui aparece un formulario-->
-  <a id="contacto"></a>
-  <section class="formulario__container">
-    <h2 class="text-center">¿Queres comunicarte?</h2>
-    <form class="formulario">
+  <a id="contact"></a>
+  <section class="contact">
+    <h2 class="contact__title">¿Queres comunicarte?</h2>
+    <form class="contact__form">
       <fieldset>
         <legend>Tus Datos</legend>
-        <div class="campo">
+        <div class="field">
           <label for="nombre">Nombre: </label>
           <input id="nombre" type="text" placeholder="Tu Nombre" required />
         </div>
-        <div class="campo">
+        <div class="field">
           <label for="asunto">Asunto:</label>
           <input id="asunto" type="text" placeholder="Tu Asunto" required />
         </div>
-        <div class="campo">
+        <div class="field">
           <label for="email">E-mail:</label>
           <input id="email" type="email" placeholder="Tu Email" />
         </div>
-        <div class="campo">
+        <div class="field">
           <label for="tel">Teléfono:</label>
           <input id="tel" type="tel" placeholder="Tu Teléfono" />
         </div>
-        <div class="campo">
+        <div class="field">
           <label for="tel">Mensaje:</label>
           <textarea rows="10" cols="20"></textarea>
         </div>
-        <div class="campo">
+        <div class="field">
           <label for="btn"></label>
           <input class="btn" type="submit" value="Enviar" id="btn" />
         </div>
@@ -159,8 +161,8 @@
   </section>
   <!-- septima parte -->
   <h2>Gracias por su visita</h2>
-  <footer class="redes" id="redes">
-    <div class="container__redes">
+  <footer class="networks" id="networks">
+    <div class="networks__container">
       <img src="./img/facebook.png" alt="icono facebook" />
       <img src="./img/instagram.png" alt="icono instagram" />
       <img src="./img/github.png" alt="icono github" />
